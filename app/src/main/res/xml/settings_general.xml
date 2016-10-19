@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="key_pref_settings"
+	android:title="@string/title_activity_settings"
+	android:summary="@string/pref_summary_settings">
+
+	<PreferenceCategory
+		android:key="key_pref_general"
+		android:title="@string/pref_title_general"
+		android:summary="@string/pref_summary_general">
+
+		<PreferenceScreen
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="key_pref_database"
+			android:title="@string/pref_title_database"
+			android:summary="@string/pref_summary_database">
+
+			<EditTextPreference
+				android:key="key_pref_db_url"
+				android:title="@string/pref_name_db_url"
+				android:summary="@string/pref_summary_db_url"
+				android:defaultValue="jdbc:derby://localhost:1527/CMPSC_221"/>
+
+			<EditTextPreference
+				android:key="key_pref_db_user"
+				android:title="@string/pref_name_db_user"
+				android:summary="@string/pref_summary_db_user"
+				android:defaultValue="student"/>
+
+			<EditTextPreference
+				android:key="key_pref_db_password"
+				android:title="@string/pref_name_db_password"
+				android:summary="@string/pref_summary_db_password"
+				android:defaultValue="password"/>
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:key="key_pref_sensors"
+		android:title="@string/pref_title_sensors"
+		android:summary="@string/pref_summary_sensors">
+
+		<PreferenceScreen
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="key_pref_sensor_gps"
+			android:title="@string/pref_title_sensor_gps"
+			android:summary="@string/pref_summary_sensor_gps" >
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_gps_location"
+				android:defaultValue="1"
+				android:title="@string/pref_name_sensor_gps_location"
+				android:summary="@string/pref_summary_sensor_gps_location" />
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_gps_distance"
+				android:defaultValue="2"
+				android:title="@string/pref_name_sensor_gps_distance"
+				android:summary="@string/pref_summary_sensor_gps_distance" />
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_gps_speed"
+				android:defaultValue="3"
+				android:title="@string/pref_name_sensor_gps_speed"
+				android:summary="@string/pref_summary_sensor_gps_speed" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="key_pref_sensor_cadence"
+			android:title="@string/pref_title_sensor_cadence"
+			android:summary="@string/pref_summary_sensor_cadence">
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_cadence_pedal"
+				android:defaultValue="4"
+				android:title="@string/pref_name_sensor_cadence_pedal"
+				android:summary="@string/pref_summary_sensor_cadence_pedal" />
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_cadence_wheel"
+				android:defaultValue="5"
+				android:title="@string/pref_name_sensor_cadence_wheel"
+				android:summary="@string/pref_summary_sensor_cadence_wheel" />
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_cadence_distance"
+				android:defaultValue="6"
+				android:title="@string/pref_name_sensor_cadence_distance"
+				android:summary="@string/pref_summary_sensor_cadence_distance" />
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_cadence_speed"
+				android:defaultValue="7"
+				android:title="@string/pref_name_sensor_cadence_speed"
+				android:summary="@string/pref_summary_sensor_cadence_speed" />
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="key_pref_sensors_heart"
+			android:title="@string/pref_title_sensor_heart"
+			android:summary="@string/pref_summary_sensor_heart">
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_heart_bpm"
+				android:defaultValue="8"
+				android:title="@string/pref_name_sensor_heart_bpm"
+				android:summary="@string/pref_summary_sensor_heart_bpm" />
+
+			<com.cmpsc_221.cyclistapp.DatasourcePreference
+				android:key="key_pref_sensor_heart_calories"
+				android:defaultValue="9"
+				android:title="@string/pref_name_sensor_heart_calories"
+				android:summary="@string/pref_summary_sensor_heart_calories" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:key="key_pref_graph"
+		android:title="@string/pref_title_graph"
+		android:summary="@string/pref_summary_graph">
+
+		<PreferenceScreen
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="key_pref_graph_1"
+			android:title="@string/pref_title_graph_1"
+			android:summary="@string/pref_summary_graph_1">
+
+			<PreferenceCategory
+				android:key="key_pref_gps_graph_1"
+				android:title="@string/pref_title_gps_graph"
+				android:summary="@string/pref_summary_gps_graph">
+
+				<CheckBoxPreference
+					android:key="key_pref_gps_altitude_1"
+					android:title="@string/pref_name_gps_altitude"
+					android:summary="@string/pref_summary_gps_altitude"
+					android:defaultValue="true"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_gps_distance_1"
+					android:title="@string/pref_name_gps_distance"
+					android:summary="@string/pref_summary_gps_distance"
+					android:defaultValue="true"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_gps_speed_1"
+					android:title="@string/pref_name_gps_speed"
+					android:summary="@string/pref_summary_gps_speed"
+					android:defaultValue="true"/>
+			</PreferenceCategory>
+
+			<PreferenceCategory
+				android:key="key_pref_cadence_graph_1"
+				android:title="@string/pref_title_cadence_graph"
+				android:summary="@string/pref_summary_cadence_graph">
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_pedal_1"
+					android:title="@string/pref_name_cadence_pedal"
+					android:summary="@string/pref_summary_cadence_pedal"
+					android:defaultValue="false"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_wheel_1"
+					android:title="@string/pref_name_cadence_wheel"
+					android:summary="@string/pref_summary_cadence_wheel"
+					android:defaultValue="false"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_distance_1"
+					android:title="@string/pref_name_cadence_distance"
+					android:summary="@string/pref_summary_cadence_distance"
+					android:defaultValue="false"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_speed_1"
+					android:title="@string/pref_name_cadence_speed"
+					android:summary="@string/pref_summary_cadence_speed"
+					android:defaultValue="false"/>
+			</PreferenceCategory>
+
+			<PreferenceCategory
+				android:key="key_pref_heart_graph_1"
+				android:title="@string/pref_title_heart_graph"
+				android:summary="@string/pref_summary_heart_graph">
+
+				<CheckBoxPreference
+					android:key="key_pref_heart_bpm_1"
+					android:title="@string/pref_name_heart_bpm"
+					android:summary="@string/pref_summary_heart_bpm"
+					android:defaultValue="false"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_heart_calories_1"
+					android:title="@string/pref_name_heart_calories"
+					android:summary="@string/pref_summary_heart_calories"
+					android:defaultValue="false"/>
+			</PreferenceCategory>
+		</PreferenceScreen>
+
+		<PreferenceScreen
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="key_pref_graph_2"
+			android:title="@string/pref_title_graph_2"
+			android:summary="@string/pref_summary_graph_2">
+
+			<PreferenceCategory
+				android:key="key_pref_gps_graph_2"
+				android:title="@string/pref_title_gps_graph"
+				android:summary="@string/pref_summary_gps_graph">
+
+				<CheckBoxPreference
+					android:key="key_pref_gps_altitude_2"
+					android:title="@string/pref_name_gps_altitude"
+					android:summary="@string/pref_summary_gps_altitude"
+					android:defaultValue="fasle"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_gps_distance_2"
+					android:title="@string/pref_name_gps_distance"
+					android:summary="@string/pref_summary_gps_distance"
+					android:defaultValue="false"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_gps_speed_2"
+					android:title="@string/pref_name_gps_speed"
+					android:summary="@string/pref_summary_gps_speed"
+					android:defaultValue="false"/>
+			</PreferenceCategory>
+
+			<PreferenceCategory
+				android:key="key_pref_cadence_graph_2"
+				android:title="@string/pref_title_cadence_graph"
+				android:summary="@string/pref_summary_cadence_graph">
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_pedal_1"
+					android:title="@string/pref_name_cadence_pedal"
+					android:summary="@string/pref_summary_cadence_pedal"
+					android:defaultValue="true"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_wheel_2"
+					android:title="@string/pref_name_cadence_wheel"
+					android:summary="@string/pref_summary_cadence_wheel"
+					android:defaultValue="true"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_distance_2"
+					android:title="@string/pref_name_cadence_distance"
+					android:summary="@string/pref_summary_cadence_distance"
+					android:defaultValue="true"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_cadence_speed_2"
+					android:title="@string/pref_name_cadence_speed"
+					android:summary="@string/pref_summary_cadence_speed"
+					android:defaultValue="true"/>
+			</PreferenceCategory>
+
+			<PreferenceCategory
+				android:key="key_pref_heart_graph_2"
+				android:title="@string/pref_title_heart_graph"
+				android:summary="@string/pref_summary_heart_graph">
+
+				<CheckBoxPreference
+					android:key="key_pref_heart_bpm_2"
+					android:title="@string/pref_name_heart_bpm"
+					android:summary="@string/pref_summary_heart_bpm"
+					android:defaultValue="false"/>
+
+				<CheckBoxPreference
+					android:key="key_pref_heart_calories_2"
+					android:title="@string/pref_name_heart_calories"
+					android:summary="@string/pref_summary_heart_calories"
+					android:defaultValue="false"/>
+			</PreferenceCategory>
+		</PreferenceScreen>
+	</PreferenceCategory>
+</PreferenceScreen>
+<!--End-->

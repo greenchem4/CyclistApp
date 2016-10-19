@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView
+		android:id="@+id/datasource_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Datasource:"
+		android:textSize="10pt" />
+
+	<EditText
+		android:id="@+id/datasource"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/datasource_label"
+		android:layout_toRightOf="@id/datasource_label"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:hint="WIP"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/app_package_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/datasource_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="AppPackageName:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/app_package"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/app_package_label"
+		android:layout_toRightOf="@id/app_package_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/datatype_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/app_package_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Datatype:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/datatype"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/datatype_label"
+		android:layout_toRightOf="@id/datatype_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/name_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/datatype_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Name:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/name_label"
+		android:layout_toRightOf="@id/name_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_manufacture_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/name_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Device Manufacture:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_manufacture"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/device_manufacture_label"
+		android:layout_toRightOf="@id/device_manufacture_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_model_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/device_manufacture_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Device Model:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_model"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/device_model_label"
+		android:layout_toRightOf="@id/device_model_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_uid_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/device_model_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Device Uid:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_uid"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/device_uid_label"
+		android:layout_toRightOf="@id/device_uid_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_type_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/device_uid_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Device Type:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/device_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/device_type_label"
+		android:layout_toRightOf="@id/device_type_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/stream_name_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/device_type_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Stream Name:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/stream_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/stream_name_label"
+		android:layout_toRightOf="@id/stream_name_label"
+		android:text="temp"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/sensor_type_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/stream_name_label"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="4dip"
+		android:layout_marginTop="4dip"
+		android:text="Sensor Type:"
+		android:textSize="10pt" />
+
+	<TextView
+		android:id="@+id/sensor_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/sensor_type_label"
+		android:layout_toRightOf="@id/sensor_type_label"
+		android:text="temp"
+		android:textSize="10pt" />
+</merge>

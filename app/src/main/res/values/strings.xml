@@ -1,0 +1,131 @@
+<resources>
+	<!--App-->
+	<string name="app_name">Cyclist App</string>
+
+	<string name="action_settings">Settings</string>
+
+
+	<!--Main Activity-->
+	<string name="button_start_monitoring">Start Monitoring</string>
+	<string name="button_database">Database</string>
+
+
+	<!--Monitor Activity-->
+	<string name="title_activity_monitor_sensors">MonitorSensorsActivity</string>
+	<string name="button_display_real_time">Real Time Data</string>
+
+
+	<!--Real Time Display Activity-->
+	<string name="title_activity_real_time_display">Real Time Display</string>
+
+	<string name="graph_series_gps_altitude">GPS Altitude</string>
+	<string name="graph_series_gps_distance">GPS Distance</string>
+	<string name="graph_series_gps_speed">GPS Speed</string>
+
+	<string name="graph_series_cadence_pedal">Cadence Pedal Rpm</string>
+	<string name="graph_series_cadence_wheel">Cadence Wheel Rpm</string>
+	<string name="graph_series_cadence_distance">Cadence Distance</string>
+	<string name="graph_series_cadence_speed">Cadence Speed</string>
+
+	<string name="graph_series_heart_bpm">Heart Rate Bpm</string>
+	<string name="graph_series_heart_calories">Calories Burned</string>
+
+
+	<!--Settings Activity-->
+	<string name="title_activity_settings">Settings</string>
+
+	<string name="pref_title_general">General settings</string>
+		<string name="pref_title_database">Database</string>
+			<string name="pref_name_db_url">Database URL</string>
+			<string name="pref_name_db_user">User</string>
+			<string name="pref_name_db_password">Password</string>
+
+			<string name="pref_summary_db_url">Database URL summary</string>
+			<string name="pref_summary_db_user">Username summary</string>
+			<string name="pref_summary_db_password">Password summary</string>
+		<string name="pref_summary_database">Database summary</string>
+	<string name="pref_summary_general">General settings summary</string>
+
+	<string name="pref_title_sensors">Sensors</string>
+		<string name="pref_title_sensor_gps">Show Gps Data Sensor</string>
+			<string name="pref_name_sensor_gps_location">Show Gps Location Sensor</string>
+			<string name="pref_name_sensor_gps_distance">Show Gps Distance Sensor</string>
+			<string name="pref_name_sensor_gps_speed">Show Gps Speed Sensor</string>
+
+			<string name="pref_summary_sensor_gps_location">Show Gps Location Sensor summary</string>
+			<string name="pref_summary_sensor_gps_distance">Show Gps Distance Sensor summary</string>
+			<string name="pref_summary_sensor_gps_speed">Show Gps Speed Sensor summary</string>
+		<string name="pref_summary_sensor_gps">Show Gps Sensor summary</string>
+
+		<string name="pref_title_sensor_cadence">Show Cadence Sensor Data</string>
+			<string name="pref_name_sensor_cadence_pedal">Show Cadence Pedal rpm Sensor</string>
+			<string name="pref_name_sensor_cadence_wheel">Show Cadence Wheel rpm Sensor</string>
+			<string name="pref_name_sensor_cadence_distance">Show Cadence Distance Sensor</string>
+			<string name="pref_name_sensor_cadence_speed">Show Cadence Speed Sensor</string>
+
+			<string name="pref_summary_sensor_cadence_pedal">Show Cadence Pedal rpm Sensor summary</string>
+			<string name="pref_summary_sensor_cadence_wheel">Show Cadence Wheel rpm Sensor summary</string>
+			<string name="pref_summary_sensor_cadence_distance">Show Cadence Distance Sensor summary</string>
+			<string name="pref_summary_sensor_cadence_speed">Show Cadence Speed Sensor summary</string>
+		<string name="pref_summary_sensor_cadence">Show Cadence Sensor summary</string>
+
+		<string name="pref_title_sensor_heart">Show Heart Rate Data Sensor</string>
+			<string name="pref_name_sensor_heart_bpm">Show Heart Rate bpm Sensor</string>
+			<string name="pref_name_sensor_heart_calories">Show Calories burned Sensor</string>
+
+			<string name="pref_summary_sensor_heart_bpm">Show Heart Rate bpm Sensor summary</string>
+			<string name="pref_summary_sensor_heart_calories">Show Calories burned Sensor summary</string>
+		<string name="pref_summary_sensor_heart">Show Heart Rate Sensor summary</string>
+	<string name="pref_summary_sensors">Sensors summary</string>
+
+	<string name="pref_title_graph">Real time display</string>
+		<string name="pref_title_graph_1">Graph 1</string>
+		<string name="pref_title_graph_2">Graph 2</string>
+			<string name="pref_title_gps_graph">Show Gps Data</string>
+				<string name="pref_name_gps_altitude">Show Gps Altitude</string>
+				<string name="pref_name_gps_distance">Show Gps Distance</string>
+				<string name="pref_name_gps_speed">Show Gps Speed</string>
+
+				<string name="pref_summary_gps_altitude">Show Gps Altitude summary</string>
+				<string name="pref_summary_gps_distance">Show Gps Distance summary</string>
+				<string name="pref_summary_gps_speed">Show Gps Speed summary</string>
+			<string name="pref_summary_gps_graph">Show Gps summary</string>
+
+			<string name="pref_title_cadence_graph">Show Cadence Data</string>
+				<string name="pref_name_cadence_pedal">Show Cadence Pedal rpm</string>
+				<string name="pref_name_cadence_wheel">Show Cadence Wheel rpm</string>
+				<string name="pref_name_cadence_distance">Show Cadence Distance</string>
+				<string name="pref_name_cadence_speed">Show Cadence Speed</string>
+
+				<string name="pref_summary_cadence_pedal">Show Cadence Pedal rpm summary</string>
+				<string name="pref_summary_cadence_wheel">Show Cadence Wheel rpm summary</string>
+				<string name="pref_summary_cadence_distance">Show Cadence Distance summary</string>
+				<string name="pref_summary_cadence_speed">Show Cadence Speed summary</string>
+			<string name="pref_summary_cadence_graph">Show Cadence summary</string>
+
+			<string name="pref_title_heart_graph">Show Heart Rate Data</string>
+				<string name="pref_name_heart_bpm">Show Heart Rate bpm</string>
+				<string name="pref_name_heart_calories">Show Calories burned</string>
+
+				<string name="pref_summary_heart_bpm">Show Heart Rate bpm summary</string>
+				<string name="pref_summary_heart_calories">Show Calories burned summary</string>
+			<string name="pref_summary_heart_graph">Show Heart Rate summary</string>
+		<string name="pref_summary_graph_2">Graph 1 summary</string>
+		<string name="pref_summary_graph_1">Graph 2 summary</string>
+	<string name="pref_summary_graph">Rea time display summary</string>
+
+	<string name="pref_summary_settings">Settings summary</string>
+
+	<!--Google API strings-->
+	<string name="play_services_error">Google Play services is not available.  This application will close.</string>
+	<string name="close">Close</string>
+
+	<!--Testing strings-->
+	<string name="hello_world">Hello world!</string>
+	<string name="edit_message">edit message</string>
+	<string name="button_stop_monitoring">Stop Monitoring</string>
+	<string name="button_switch_to_real_time">Real Time Data</string>
+
+
+</resources>
+<!--End-->
